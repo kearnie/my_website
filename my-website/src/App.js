@@ -7,9 +7,13 @@ class App extends Component {
   render() {
     const tabs = ['home', 'work', 'code', 'arts'];
     return (
-      <Tab
-        tabs={tabs}
-      />
+      <div className="App">
+        <header className="App-header">
+          <Tab
+            tabs={tabs}
+          />
+        </header>
+      </div>
     );
     // return (
     //   <div className="App">

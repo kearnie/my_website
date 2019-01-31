@@ -10,6 +10,7 @@ class App extends Component {
 
   render() {
     const tabs = ['about', 'work', 'dev', 'arts'];
+    console.log(this.state.currentTab);
     return (
       <div className="App">
         <header className="App-header">

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import Tab from './Tab.js';
+import Content from './Content.js';
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +29,9 @@ class App extends Component {
             />
           </div>
           <div className="contents-container">
+            <Content 
+              currentTab={this.state.currentTab}
+            />
           </div>
         </header>
       </div>

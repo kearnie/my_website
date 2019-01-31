@@ -4,14 +4,21 @@ import './App.css';
 import Tab from './Tab.js';
 
 class App extends Component {
+  state = {
+    currentTab: 'home',
+  }
+
   render() {
-    const tabs = ['home', 'work', 'code', 'arts'];
+    const tabs = ['about', 'work', 'dev', 'arts'];
     return (
       <div className="App">
         <header className="App-header">
           <Tab
             tabs={tabs}
+            currentTab={this.state.currentTab}
           />
+          <div className="info-container">
+          </div>
         </header>
       </div>
     );

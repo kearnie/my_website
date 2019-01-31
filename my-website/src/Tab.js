@@ -6,9 +6,20 @@ class Tab extends Component {
     super(props);
   }
 
+  state = {
+    currentTab: this.props.currentTab,
+  }
+
+  updateTab = (tabName) => {
+    this.setState({currentTab: tabName});
+  }
+
   renderTab(tabName) {
     return (
-      <div className="sidebar-tab">
+      <div 
+        className="sidebar-tab"
+        onClick={this.updateTab}
+      >
         {tabName}
       </div>
     );

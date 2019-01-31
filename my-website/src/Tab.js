@@ -4,12 +4,11 @@ import './Tab.css';
 class Tab extends Component {
   constructor(props) {
     super(props);
-    this.updateTab = this.updateTab.bind(this);
   }
 
-  state = {
-    currentTab: this.props.currentTab,
-  }
+  // state = {
+  //   currentTab: this.props.currentTab,
+  // }
 
   // updateTab(tabName) {
   //   this.setState({currentTab: tabName});
@@ -32,7 +31,7 @@ class Tab extends Component {
         return (
           <div
             className="sidebar-tab"
-            onClick={() => this.setState({currentTab: tabName})}
+            onClick={() => this.props.onTabChange(tabName)}
           >
             {tabName}
           </div>

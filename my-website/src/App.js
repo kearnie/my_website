@@ -4,8 +4,14 @@ import './App.css';
 import Tab from './Tab.js';
 
 class App extends Component {
-  state = {
-    currentTab: 'home',
+  constructor(props) {
+    super(props);
+    this.handleTabChange = this.handleTabChange.bind(this);
+    this.state = {currentTab: 'home'};
+  }
+
+  handleTabChange(clickedTab) {
+    this.setState({currentTab: clickedTab});
   }
 
   render() {
@@ -14,11 +20,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Tab
-            tabs={tabs}
-            currentTab={this.state.currentTab}
-          />
-          <div className="info-container">
+          <div className="tabs-container">
+            <Tab
+              tabs={tabs}
+              currentTab={this.state.currentTab}
+              onTabChange={this.handleTabChange}
+            />
+          </div>
+          <div className="contents-container">
           </div>
         </header>
       </div>

@@ -12,6 +12,7 @@
   background-color: #141f38;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -23,7 +24,16 @@
 }
 
 .tabs-container {
-  margin: 10px;
+  margin: 2vmin;
+  display: flex;
+}
+
+::selection {
+  background: rgb(255,255,255,0.3);
+}
+
+::-moz-selection {
+  background: rgb(255,255,255,0.3);
 }
 
 /*@keyframes App-logo-spin {

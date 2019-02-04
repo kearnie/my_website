@@ -2,9 +2,15 @@
   font-family: 'Gaegu', sans-serif;
 }*/
 
+.sidebar {
+  display: flex;
+}
+
 .sidebar-tab {
   cursor: pointer;
   transition: all 0.5s ease 0s;
+  margin: 2vmin;
+  text-transform: uppercase;
 }
 
 .sidebar-tab:hover {

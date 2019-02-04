@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Content.css';
+import Box from './Box.js';
 
 class Content extends Component {
   constructor(props) {
@@ -8,9 +9,10 @@ class Content extends Component {
 
   renderAboutContent() {
     return (
-      <div>
-        this my about stuff
-      </div>
+      <Box
+        tab={'about'}
+        
+      />
     )
   }
 

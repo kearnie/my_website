@@ -11,8 +11,9 @@
   transition: all 0.5s ease 0s;
   margin: 2vmin;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .sidebar-tab:hover {
-  opacity: 0.6;
+  color: #a2caef;
 }

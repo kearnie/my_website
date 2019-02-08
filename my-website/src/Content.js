@@ -11,7 +11,6 @@ class Content extends Component {
     return (
       <Box
         tab={'about'}
-        
       />
     )
   }

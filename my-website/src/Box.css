@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 8px;
+  margin: 2vmin;
 }
 
 .content-container {
   padding: 0.5vmin;
-  border-radius: 10px;
+  border-radius: 0.1vmin;
 }
 
 .multibox-container {
@@ -26,15 +26,15 @@
 
 .content-window-header-bar {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 2vmin;
   letter-spacing: 0.6px;
   padding: 6px;
   color: #647faa;
 }
 
 .content-window-main-wrapper {
-  max-width: 68vmin;
-  height: 68vmin;
+  width: 48vmin;
+  height: 48vmin;
   border-radius: 2vmin;
   padding: 1vmin;
   margin: 1vmin;
@@ -45,15 +45,20 @@
 }
 
 .main-text {
-  padding: 2vmin;
-  font-size: 3.5vmin;
+  padding: 1vmin 1.3vmin;
+  font-size: 2.5vmin;
   color: #ffffff;
   line-height: 1.4;
 }
 
+ul {
+  margin: 0.4vmin;
+  padding-left: 5vmin;
+}
+
 .footer {
   padding: 2vmin;
-  font-size: 3.5vmin;
+  font-size: 2.5vmin;
   color: #ffffff;
   line-height: 1.4;
 }
@@ -67,88 +72,19 @@
   width: 7vmin;
 }
 
-.linkedin {
+.icon {
   border-radius: 50%;
   flex-grow: 0;
   transition: all 0.4s ease 0s;
   display: inline-block;
-  height: 6vmin;
-  width: 6vmin;
-  /*background-image: url("iconlinkedin.svg");*/
+  width: 3vmin;
+  fill: #ffffff;
   cursor: pointer;
-/*  background-repeat: no-repeat;
-  background-position: center;*/
+  margin-right: 2vmin;
+  margin-top: 1.3vmin;
 }
 
-.linkedin:hover {
-  opacity: 0.6;
-}
-
-.github {
-  border-radius: 50%;
-  flex-grow: 0;
-  transition: all 0.4s ease 0s;
-  display: inline-block;
-  height: 6vmin;
-  width: 6vmin;
-  /*background-image: url("icongithub.svg");*/
-  cursor: pointer;
-/*  background-repeat: no-repeat;
-  background-position: center;*/
-}
-
-.github:hover {
-  opacity: 0.6;
-}
-
-.behance {
-  border-radius: 50%;
-  flex-grow: 0;
-  transition: all 0.4s ease 0s;
-  display: inline-block;
-  height: 6vmin;
-  width: 6vmin;
-/*  background-image: url("iconbehance.svg");*/
-  cursor: pointer;
-/*  background-repeat: no-repeat;
-  background-position: center;*/
-}
-
-.behance:hover {
-  opacity: 0.6;
-}
-
-.vimeo {
-  border-radius: 50%;
-  flex-grow: 0;
-  transition: all 0.4s ease 0s;
-  display: inline-block;
-  height: 6vmin;
-  width: 6vmin;
-/*  background-image: url("iconvimeo.svg");*/
-  cursor: pointer;
-/*  background-repeat: no-repeat;
-  background-position: center;*/
-}
-
-.vimeo:hover {
-  opacity: 0.6;
-}
-
-.twitter {
-  border-radius: 50%;
-  flex-grow: 0;
-  transition: all 0.4s ease 0s;
-  display: inline-block;
-  height: 6vmin;
-  width: 6vmin;
-/*  background-image: url("sadfgg.svg");*/
-  cursor: pointer;
-/*  background-repeat: no-repeat;
-  background-position: center;*/
-}
-
-.twitter:hover {
+.icon:hover {
   opacity: 0.6;
 }
 

@@ -9,7 +9,7 @@
 .sidebar-tab {
   cursor: pointer;
   transition: all 0.5s ease 0s;
-  margin: 2vmin;
+  margin: 1.1vmin 2vmin;
   text-transform: uppercase;
   font-weight: 600;
 }

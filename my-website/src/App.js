@@ -33,6 +33,9 @@ class App extends Component {
               currentTab={this.state.currentTab}
             />
           </div>
+          <div className="credits">
+            site by kearnie, 2019
+          </div>
         </header>
       </div>
     );

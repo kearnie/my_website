@@ -35,21 +35,121 @@
 .content-window-main-wrapper {
   max-width: 68vmin;
   height: 68vmin;
-  /*background-color: rgb(255,255,255,0.15);*/
-  border-radius: 6px;
-  padding: 10px;
-  margin: 10px;
+  border-radius: 2vmin;
+  padding: 1vmin;
+  margin: 1vmin;
   flex-grow: 1;
   text-align: left;
-  /*background-image: url("a1.png");*/
   background-size: cover;
+  overflow: auto;
 }
 
 .main-text {
-  padding: 10px 2px;
+  padding: 2vmin;
   font-size: 3.5vmin;
   color: #ffffff;
   line-height: 1.4;
+}
+
+.footer {
+  padding: 2vmin;
+  font-size: 3.5vmin;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.ext-icons {
+  display: flex;
+}
+
+.icon-container {
+  height: 7vmin;
+  width: 7vmin;
+}
+
+.linkedin {
+  border-radius: 50%;
+  flex-grow: 0;
+  transition: all 0.4s ease 0s;
+  display: inline-block;
+  height: 6vmin;
+  width: 6vmin;
+  /*background-image: url("iconlinkedin.svg");*/
+  cursor: pointer;
+/*  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+.linkedin:hover {
+  opacity: 0.6;
+}
+
+.github {
+  border-radius: 50%;
+  flex-grow: 0;
+  transition: all 0.4s ease 0s;
+  display: inline-block;
+  height: 6vmin;
+  width: 6vmin;
+  /*background-image: url("icongithub.svg");*/
+  cursor: pointer;
+/*  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+.github:hover {
+  opacity: 0.6;
+}
+
+.behance {
+  border-radius: 50%;
+  flex-grow: 0;
+  transition: all 0.4s ease 0s;
+  display: inline-block;
+  height: 6vmin;
+  width: 6vmin;
+/*  background-image: url("iconbehance.svg");*/
+  cursor: pointer;
+/*  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+.behance:hover {
+  opacity: 0.6;
+}
+
+.vimeo {
+  border-radius: 50%;
+  flex-grow: 0;
+  transition: all 0.4s ease 0s;
+  display: inline-block;
+  height: 6vmin;
+  width: 6vmin;
+/*  background-image: url("iconvimeo.svg");*/
+  cursor: pointer;
+/*  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+.vimeo:hover {
+  opacity: 0.6;
+}
+
+.twitter {
+  border-radius: 50%;
+  flex-grow: 0;
+  transition: all 0.4s ease 0s;
+  display: inline-block;
+  height: 6vmin;
+  width: 6vmin;
+/*  background-image: url("sadfgg.svg");*/
+  cursor: pointer;
+/*  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+.twitter:hover {
+  opacity: 0.6;
 }
 
 a {

@@ -51,7 +51,7 @@ class Content extends Component {
             desc: 'Under construction! Coming soon :)',
             link: 'https://github.com/kearnie',
             linkLabel: 'my github!',
-            msg: "Most recently I won Google's Best Accessibility Hack award with 3 friends at TartanHacks 2019! We developed a Chrome extension that includes a suite of personalized features that improves web-browsing experience for access."
+            msg: "Most recently I won Google's Best Accessibility Hack award with 3 friends at TartanHacks 2019! We developed a Chrome extension that includes a suite of personalized features that improves web browsing experience for access. Documentation coming soon!"
           }
         ]}
       />

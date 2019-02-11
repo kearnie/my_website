@@ -106,6 +106,10 @@ ul {
   opacity: 0.6;
 }
 
+.soft-link {
+  font-weight: 400;
+}
+
 a {
   color: #ededed;
   text-decoration: none;

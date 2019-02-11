@@ -56,6 +56,7 @@ class Box extends Component {
               <li>planetariums</li>
               <li>sitting through movie credits</li>
               <li>acai bowls</li>
+              <li>kumquat lemon green tea</li>
             </ul>
           </div>
         </div>
@@ -63,14 +64,26 @@ class Box extends Component {
     );
   }
 
-  renderBlockInfo() {
+  renderBlockInfo(boxInfo, i) {
+    const backgroundCrops = ["/b1.png", "/b2.png", "/c1.png", "/c2.png", "/d1.png", "/d2.png"];
+    const backgroundMaxIndex = backgroundCrops.length;
+    const bgIndex = i % backgroundMaxIndex;
     return (
-      <div>
+      <div 
+        className="content-window-main-wrapper"
+        style={{backgroundImage: `url(${backgroundCrops[bgIndex]})`}}
+      >
+        <div className="content-window-header-bar">
+          {boxInfo.title}
+        </div>
+        {boxInfo.desc}
       </div>
     );
   }
 
   render() {
+    const blocks = this.props.boxes;
+    console.log(blocks);
     return (
       <div className="content-container">
         {this.props.tab === 'about' && this.renderAboutInfo()}

@@ -28,10 +28,12 @@ class Tab extends Component {
   render() {
     const tabs = this.props.tabs.map(
       (tabName) => {
+        const tabHighlight = ((this.props.currentTab === "home") || (this.props.currentTab === tabName)) ? 1 : 0.7;
         return (
           <div
             className="sidebar-tab"
             onClick={() => this.props.onTabChange(tabName)}
+            style={{"opacity": tabHighlight}}
           >
             {tabName}
           </div>

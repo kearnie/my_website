@@ -26,15 +26,15 @@
 
 .content-window-header-bar {
   text-transform: uppercase;
-  font-size: 2vmin;
+  font-size: 4vmin;
+  color: #a2caef;
   letter-spacing: 0.6px;
-  padding: 6px;
-  color: #647faa;
 }
 
 .content-window-main-wrapper {
-  width: 48vmin;
-  height: 48vmin;
+  width: 48.5vmin;
+  max-width: 48.5vmin;
+  height: 48.5vmin;
   border-radius: 2vmin;
   padding: 1vmin;
   margin: 1vmin;

@@ -12,31 +12,59 @@ class Content extends Component {
       <Box
         tab={'about'}
       />
-    )
+    );
   }
 
   renderWorkContent() {
     return (
-      <div>
-        this my work stuff
-      </div>
-    )
+      <Box
+        tab={'work'}
+        boxes={[
+          {
+            title: 'Terrain Data',
+            role: 'Full Stack Software Engineer Intern',
+            date: 'May 2018 - August 2018',
+            link: 'https://www.behance.net/gallery/71244959/Terrain-Data-2018-Internship',
+            desc: 'Under construction! Coming soon :)'
+          },
+          {
+            title: 'Johnson & Johnson',
+            role: 'Product Manager Intern',
+            date: 'June 2017 - January 2018',
+            link: 'https://www.behance.net/gallery/56165733/J-J-EADS-Data-Dashboard',
+            desc: 'Under construction! Coming soon :)'
+          }
+        ]}
+      />
+    );
   }
 
   renderDevContent() {
     return (
-      <div>
-        dev stuff!!
-      </div>
-    )
+      <Box
+        tab={'dev'}
+        boxes={[
+          {
+            title: 'Code and such',
+            desc: 'Under construction! Coming soon :)'
+          }
+        ]}
+      />
+    );
   }
 
   renderArtsContent() {
     return (
-      <div>
-        artsy fartsy
-      </div>
-    )
+      <Box
+        tab={'arts'}
+        boxes={[
+          {
+            title: 'Arts and stuff',
+            desc: 'Under construction! Coming soon :)'
+          }
+        ]}
+      />
+    );
   }
 
   render() {

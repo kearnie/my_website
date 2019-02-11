@@ -96,10 +96,14 @@ class Box extends Component {
         <div className="content-window-header-bar">
           {boxInfo.title}
         </div>
-          {boxInfo.role && this.renderField(boxInfo.role, 'subtitle')}
+        {boxInfo.role && this.renderField(boxInfo.role, 'subtitle')}
         {boxInfo.date && this.renderField(boxInfo.date, 'date')}
         <div className="main-text">
-          {boxInfo.desc}
+          {boxInfo.desc} 
+        </div>
+        <div className="main-text">
+          For now, please check <a href={boxInfo.link} target="_blank" title={boxInfo.linkLabel}>this</a> out!<br/>
+          {boxInfo.msg}
         </div>
       </div>
     );

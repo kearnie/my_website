@@ -27,9 +27,10 @@
 
 .content-window-header-bar {
   text-transform: uppercase;
-  font-size: 3.5vmin;
-  padding: 1vmin 1.3vmin;
+  font-size: 3.4vmin;
+  padding: 1vmin 1.3vmin 0.1vmin;
   color: #a2caef;
+  opacity: 0.93;
   letter-spacing: 0.5px;
   font-weight: 600;
 }
@@ -55,15 +56,17 @@
 }
 
 .subtitle {
-  padding: 1vmin 1.3vmin;
-  font-size: 2.5vmin;
+  padding: 0vmin 1.3vmin;
+  font-size: 2.9vmin;
   color: #ffffff;
+  font-weight: 600;
 }
 
 .date {
-  padding: 1vmin 1.3vmin;
+  padding: 0vmin 1.3vmin;
   font-size: 2.5vmin;
   color: #ffffff; 
+  opacity: 0.7;
 }
 
 ul {

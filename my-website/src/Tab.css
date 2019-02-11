@@ -15,5 +15,6 @@
 }
 
 .sidebar-tab:hover {
-  color: #a2caef;
+  /*color: #a2caef;*/
+  color: rgba(162, 202, 239, 1);
 }

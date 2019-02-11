@@ -64,10 +64,30 @@ class Box extends Component {
     );
   }
 
+  renderField(field, classSpec) {
+    return (
+      <div className={classSpec}>{field}</div>
+    );
+  }
+
   renderBlockInfo(boxInfo, i) {
     const backgroundCrops = ["/b1.png", "/b2.png", "/c1.png", "/c2.png", "/d1.png", "/d2.png"];
     const backgroundMaxIndex = backgroundCrops.length;
-    const bgIndex = i % backgroundMaxIndex;
+    let startIndex = 0;
+    switch(this.props.tab) {
+      case 'work':
+        startIndex = 0;
+        break;
+      case 'dev':
+        startIndex = 2;
+        break;
+      case 'arts':
+        startIndex = 4;
+        break;
+      default:
+        startIndex = 0;
+    }
+    const bgIndex = (i + startIndex) % backgroundMaxIndex;
     return (
       <div 
         className="content-window-main-wrapper"
@@ -76,18 +96,24 @@ class Box extends Component {
         <div className="content-window-header-bar">
           {boxInfo.title}
         </div>
-        {boxInfo.desc}
+          {boxInfo.role && this.renderField(boxInfo.role, 'subtitle')}
+        {boxInfo.date && this.renderField(boxInfo.date, 'date')}
+        <div className="main-text">
+          {boxInfo.desc}
+        </div>
       </div>
     );
   }
 
   render() {
-    const blocks = this.props.boxes;
-    console.log(blocks);
+    //console.log(this.props.boxes);
+    const blocks = (this.props.tab !== 'about') ? (this.props.boxes.map((boxInfo, i) => this.renderBlockInfo(boxInfo, i))) : null;
     return (
       <div className="content-container">
         {this.props.tab === 'about' && this.renderAboutInfo()}
-        {this.props.tab !== 'about' && this.renderBlockInfo()}
+        <div className="multibox-container">
+          {blocks}
+        </div>
       </div>
     );
   }

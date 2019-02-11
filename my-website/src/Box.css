@@ -8,6 +8,7 @@
 .content-container {
   padding: 0.5vmin;
   border-radius: 0.1vmin;
+  display: flex;
 }
 
 .multibox-container {
@@ -26,9 +27,11 @@
 
 .content-window-header-bar {
   text-transform: uppercase;
-  font-size: 4vmin;
+  font-size: 3.5vmin;
+  padding: 1vmin 1.3vmin;
   color: #a2caef;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
 .content-window-main-wrapper {
@@ -49,6 +52,18 @@
   font-size: 2.5vmin;
   color: #ffffff;
   line-height: 1.4;
+}
+
+.subtitle {
+  padding: 1vmin 1.3vmin;
+  font-size: 2.5vmin;
+  color: #ffffff;
+}
+
+.date {
+  padding: 1vmin 1.3vmin;
+  font-size: 2.5vmin;
+  color: #ffffff; 
 }
 
 ul {

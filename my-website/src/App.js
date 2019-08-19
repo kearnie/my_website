@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import Tab from './Tab.js';
 import Content from './Content.js';
@@ -17,7 +16,8 @@ class App extends Component {
 
   render() {
     const tabs = ['about', 'work', 'dev', 'arts'];
-    console.log(this.state.currentTab);
+    // const backgroundImg = "/fogg-bg.png"
+    // console.log(this.state.currentTab);
     return (
       <div className="App">
         <header className="App-header">

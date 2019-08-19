@@ -22,8 +22,8 @@ class Box extends Component {
           style={{backgroundImage: `url(${backgroundImage1})`}}
         >
           <div className="main-text">Hello, this is Kearnie!</div>
-          <div className="main-text">I am currently studying computer science and art at <a className="soft-link" href="https://www.cmu.edu/interdisciplinary/programs/bcsa.html" target="_blank" title="Bachelor of Computer Science and Arts (BCSA)">Carnegie Mellon University</a>, and am excited to apply my skills in areas such as software engineering, product management, and design.</div>
-          <div className="main-text">I am particularly passionate about <a className="soft-link" href="https://hcii.cmu.edu/" target="_blank" title="Human-Computer Interaction">HCI</a>, accessibility, and growth!</div>
+          <div className="main-text">I am currently a front-end software engineer intern at <a className="soft-link" href="https://transcend.io" target="_blank" title="Transcend">Transcend</a>, where I am building interfaces of online Data Privacy Centers that will give users more power over their personal data.</div> 
+          <div className="main-text">I recently graduated from <a className="soft-link" href="https://www.cmu.edu/interdisciplinary/programs/bcsa.html" target="_blank" title="Bachelor of Computer Science and Arts (BCSA)">Carnegie Mellon University</a>, where I studied computer science and art. I am particularly passionate about <a className="soft-link" href="https://hcii.cmu.edu/" target="_blank" title="Human-Computer Interaction">HCI</a>, accessibility, and growth, wanting to create empathetic experiences that will be more approachable and empowering for end users.</div>
           <div className="footer">
             <a className="file-links" href="kearnie_resume.pdf" target="_blank">resume</a> | <a className="file-links" href="mailto:xrniel@gmail.com">xrniel@gmail.com</a>
             <div className="ext-icons">
@@ -99,10 +99,10 @@ class Box extends Component {
         {boxInfo.role && this.renderField(boxInfo.role, 'subtitle')}
         {boxInfo.date && this.renderField(boxInfo.date, 'date')}
         <div className="main-text">
-          {boxInfo.desc} 
+          {boxInfo.desc && boxInfo.desc} 
         </div>
         <div className="main-text">
-          For now, please check <a href={boxInfo.link} target="_blank" title={boxInfo.linkLabel}>this</a> out!<br/>
+          Please go <a href={boxInfo.link} target="_blank" title={boxInfo.linkLabel}>here</a> to learn more :)<br/>
         </div>
         {boxInfo.msg && this.renderField(boxInfo.msg, 'main-text')}
       </div>

@@ -1,55 +1,118 @@
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width:0px) {
+  /* technically 320, smartphones, iPhone, portrait 480x320 phones */
+  .App {
+    text-align: center;
+    font-family: 'Gaegu', sans-serif;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(/fogg-bg.svg);
+  }
 
-.App {
-  text-align: center;
-  font-family: 'Gaegu', sans-serif;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: bottom left;
+  .App-header {
+    /*background-color: #141f38;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.3em;
+    color: #626e80;
+  }
+
+  .contents-container {
+    margin-top: 5.5em;
+  }
+
+  /*  .tabs-container {
+    display: flex;
+  }*/
+
+  .footer {
+    padding: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .ext-icons {
+    display: flex;
+  }
+
+  .icon {
+    flex-grow: 0;
+    transition: all 0.4s ease 0s;
+    display: inline-block;
+    width: 1.5em;
+    cursor: pointer;
+    margin: 0.5em;
+  }
+
+  .icon:hover {
+    opacity: 0.8;
+  }
+
+  .soft-link {
+    font-weight: 400;
+  }
+
+  a {
+    /*color: #a2caef;*/
+    color: #c4e3ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.5s ease 0s;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  .credits {
+    font-size: 0.7em;
+    color: #b4c2d6;
+  }
 }
 
-.App-header {
-  background-color: #141f38;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width:481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width:641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .App-header {
+    font-size: 1.5em;
+  }
 }
 
-.tabs-container {
-  display: flex;
+@media (min-width:961px) {
+  /* tablet, landscape iPad, lo-res laptops and desktops */
 }
 
-.credits {
-  font-size: 2.4vmin;
-  opacity: 0.7;
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
 }
+
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+  .App {
+    background-position: bottom left;
+  }
+
+  .App-header {
+    justify-content: center;
+  }
+
+  .contents-container {
+    margin: 0;
+  }
+}
+
 
 ::selection {
-  background: rgb(255,255,255,0.3);
+  background: rgb(216, 226, 240, 0.4);
 }
 
 ::-moz-selection {
-  background: rgb(255,255,255,0.3);
+  background: rgb(216, 226, 240, 0.4);
 }
-
-/*@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/

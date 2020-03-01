@@ -2,10 +2,18 @@
   /* technically 320, smartphones, iPhone, portrait 480x320 phones */
   .App {
     text-align: center;
-    font-family: 'Gaegu', sans-serif;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-image: url(/fogg-bg.svg);
+    font-family: 'Raleway', sans-serif;
+    /*background-repeat: no-repeat;*/
+    /*background-position: bottom center;*/
+    background-image: url(/bg.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .big-text {
+    font-size: 10em;
   }
 
   .App-header {
@@ -16,7 +24,7 @@
     align-items: center;
     justify-content: flex-start;
     font-size: 1.3em;
-    color: #626e80;
+    /*color: #626e80;*/
   }
 
   .contents-container {
@@ -96,14 +104,21 @@
 @media (min-width:1281px) {
   /* hi-res laptops and desktops */
   .App {
-    background-position: bottom left;
+    background-size: contain;
   }
 
   .App-header {
     justify-content: center;
   }
 
+  .big-text {
+    font-size: 16em;
+    margin: 20px;
+  }
+
   .contents-container {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
   }
 }

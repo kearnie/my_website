@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   render() {
-    const tabs = ['about', 'work', 'dev', 'arts'];
+    // const tabs = ['about', 'work', 'dev', 'arts'];
     // const backgroundImg = "/fogg-bg.svg";
     // console.log(this.state.currentTab);
 
@@ -28,20 +28,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className="contents-container">
-            <div className="main-text">hello, this is kearnie.</div>
-            <div className="main-text">i code, design, and doodle.</div>
-            <div className="main-text">i enjoy stargazing.</div>
-            <div className="footer">
-              <div className="ext-icons">
-                <a className="icon" href="https://www.linkedin.com/in/kearnie/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><img src={linkedinicon}/></a>
-                <a className="icon" href="https://www.behance.net/kearniel" target="_blank" rel="noopener noreferrer" title="Behance"><img src={behanceicon}/></a>
-                <a className="icon" href="https://github.com/kearnie" target="_blank" rel="noopener noreferrer" title="Github"><img src={githubicon}/></a>
-                <a className="icon" href="https://twitter.com/xrniel" target="_blank" rel="noopener noreferrer" title="Twitter"><img src={twittericon}/></a>
-              </div>
-            </div>
-          </div>
-          <div className="credits">
-            site by kearnie, 2019<br/>background by fogg
+            <div className="big-text">K</div>
+            <div className="big-text">E</div>
+            <div className="big-text">A</div>
+            <div className="big-text">R</div>
+            <div className="big-text">N</div>
+            <div className="big-text">I</div>
+            <div className="big-text">E</div>
           </div>
         </header>
       </div>

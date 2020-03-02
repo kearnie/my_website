@@ -3,10 +3,10 @@ import './App.css';
 // import Tab from './Tab.js';
 // import Content from './Content.js';
 // import resumeicon from './resume.svg';
-import linkedinicon from './linkedin.svg';
-import behanceicon from './behance.svg';
-import githubicon from './github.svg';
-import twittericon from './twitter.svg';
+// import linkedinicon from './linkedin.svg';
+// import behanceicon from './behance.svg';
+// import githubicon from './github.svg';
+// import twittericon from './twitter.svg';
 
 class App extends Component {
   constructor(props) {
@@ -28,13 +28,27 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className="contents-container">
-            <div className="big-text">K</div>
-            <div className="big-text">E</div>
-            <div className="big-text">A</div>
-            <div className="big-text">R</div>
-            <div className="big-text">N</div>
-            <div className="big-text">I</div>
-            <div className="big-text">E</div>
+            <a href="https://www.linkedin.com/in/kearnie/" target="_blank" rel="noopener noreferrer" title="linkedin">
+              <div className="big-text">K</div>
+            </a>
+            <a href="https://www.behance.net/kearnie" target="_blank" rel="noopener noreferrer" title="portfolio">
+              <div className="big-text">E</div>
+            </a>
+            <a href="https://github.com/kearnie" target="_blank" rel="noopener noreferrer" title="github">
+              <div className="big-text">A</div>
+            </a>
+            <a href="https://transcend.io" target="_blank" rel="noopener noreferrer" title="work">
+              <div className="big-text">R</div>
+            </a>
+            <a href="https://www.cmu.edu/interdisciplinary/programs/bcsa.html" target="_blank" rel="noopener noreferrer" title="school">
+              <div className="big-text">N</div>
+            </a>
+            <a href="https://twitter.com/xkrnie" target="_blank" rel="noopener noreferrer" title="twitter">
+              <div className="big-text">I</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Tkc_9OPC20E" target="_blank" rel="noopener noreferrer" title="current fav song">
+              <div className="big-text">E</div>
+            </a>
           </div>
         </header>
       </div>

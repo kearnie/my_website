@@ -5,15 +5,17 @@
     font-family: 'Raleway', sans-serif;
     /*background-repeat: no-repeat;*/
     /*background-position: bottom center;*/
-    background-image: url(/bg.jpg);
+    background-image: url(/bgg.jpg);
     background-size: cover;
     background-clip: text;
+    background-position: center;
     -webkit-background-clip: text;
     color: transparent;
   }
 
   .big-text {
     font-size: 10em;
+    cursor: pointer;
   }
 
   .App-header {
@@ -66,14 +68,11 @@
 
   a {
     /*color: #a2caef;*/
-    color: #c4e3ff;
+    /*color: #c4e3ff;*/
+    color: transparent;
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.5s ease 0s;
-  }
-
-  a:hover {
-    opacity: 0.8;
+    /*font-weight: 600;*/
+    /*transition: all 0.5s ease 0s;*/
   }
 
   .credits {
@@ -104,7 +103,7 @@
 @media (min-width:1281px) {
   /* hi-res laptops and desktops */
   .App {
-    background-size: contain;
+    background-size: cover;
   }
 
   .App-header {
@@ -112,13 +111,14 @@
   }
 
   .big-text {
-    font-size: 16em;
-    margin: 20px;
+    font-size: 14.5em;
+    margin: 0 0.24em;
   }
 
   .contents-container {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin: 0;
   }
 }

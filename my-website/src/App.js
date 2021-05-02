@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import home from './home.svg';
 // import Tab from './Tab.js';
 // import Content from './Content.js';
 // import resumeicon from './resume.svg';
@@ -9,15 +10,15 @@ import './App.css';
 // import twittericon from './twitter.svg';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.handleTabChange = this.handleTabChange.bind(this);
-    this.state = {currentTab: 'home'};
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.handleTabChange = this.handleTabChange.bind(this);
+  //   this.state = {currentTab: 'home'};
+  // }
 
-  handleTabChange(clickedTab) {
-    this.setState({currentTab: clickedTab});
-  }
+  // handleTabChange(clickedTab) {
+  //   this.setState({currentTab: clickedTab});
+  // }
 
   render() {
     // const tabs = ['about', 'work', 'dev', 'arts'];
@@ -28,31 +29,43 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className="contents-container">
-            <a href="https://www.linkedin.com/in/kearnie/" target="_blank" rel="noopener noreferrer" title="linkedin">
-              <div className="big-text">K</div>
-            </a>
-            <a href="https://www.behance.net/kearnie" target="_blank" rel="noopener noreferrer" title="portfolio">
-              <div className="big-text">E</div>
-            </a>
-            <a href="https://github.com/kearnie" target="_blank" rel="noopener noreferrer" title="github">
-              <div className="big-text">A</div>
-            </a>
-            <a href="https://transcend.io" target="_blank" rel="noopener noreferrer" title="work">
-              <div className="big-text">R</div>
-            </a>
-            <a href="https://www.cmu.edu/interdisciplinary/programs/bcsa.html" target="_blank" rel="noopener noreferrer" title="school">
-              <div className="big-text">N</div>
-            </a>
-            <a href="https://twitter.com/xkrnie" target="_blank" rel="noopener noreferrer" title="twitter">
-              <div className="big-text">I</div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=Tkc_9OPC20E" target="_blank" rel="noopener noreferrer" title="current fav song">
-              <div className="big-text">E</div>
-            </a>
+            <img src={home} className="home" />
+            <p><strong>kearnie.</strong> currently doing development, design, and product at Transcend.</p>
+            <p>previously at Terrain Data, Johnson & Johnson, and Carnegie Mellon.</p>
           </div>
         </header>
       </div>
     );
+
+    // return (
+    //   <div className="App">
+    //     <header className="App-header">
+    //       <div className="contents-container">
+    //         <a href="https://www.linkedin.com/in/kearnie/" target="_blank" rel="noopener noreferrer" title="linkedin">
+    //           <p>kearnie.</p>
+    //         </a>
+    //         <a href="https://www.behance.net/kearnie" target="_blank" rel="noopener noreferrer" title="portfolio">
+    //           <p>E</p>
+    //         </a>
+    //         <a href="https://github.com/kearnie" target="_blank" rel="noopener noreferrer" title="github">
+    //           <p>A</p>
+    //         </a>
+    //         <a href="https://transcend.io" target="_blank" rel="noopener noreferrer" title="work">
+    //           <p>R</p>
+    //         </a>
+    //         <a href="https://www.cmu.edu/interdisciplinary/programs/bcsa.html" target="_blank" rel="noopener noreferrer" title="school">
+    //           <p>N</p>
+    //         </a>
+    //         <a href="https://twitter.com/xkrnie" target="_blank" rel="noopener noreferrer" title="twitter">
+    //           <p>I</p>
+    //         </a>
+    //         <a href="https://www.youtube.com/watch?v=Tkc_9OPC20E" target="_blank" rel="noopener noreferrer" title="current fav song">
+    //           <p>E</p>
+    //         </a>
+    //       </div>
+    //     </header>
+    //   </div>
+    // );
 
 
     // return (

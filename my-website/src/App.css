@@ -1,16 +1,19 @@
 @media (min-width:0px) {
   /* technically 320, smartphones, iPhone, portrait 480x320 phones */
   .App {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
+    /*text-align: center;*/
+    /*font-family: 'Raleway', sans-serif;*/
     /*background-repeat: no-repeat;*/
     /*background-position: bottom center;*/
-    background-image: url(/bgg.jpg);
-    background-size: cover;
-    background-clip: text;
-    background-position: center;
-    -webkit-background-clip: text;
-    color: transparent;
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /*background-image: url(/bgg.jpg);*/
+    /*background-size: cover;*/
+    /*background-clip: text;*/
+    /*background-position: center;*/
+    /*-webkit-background-clip: text;*/
+    /*color: transparent;*/
   }
 
   .big-text {
@@ -26,15 +29,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    font-size: 1.3em;
+    /*font-size: 1.3em;*/
     /*color: #626e80;*/
   }
 
   .contents-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /*margin: 0;*/
+    /*display: block;*/
+    padding: 2em;
+  }
+
+  .home {
+    width: 4em;
+    margin-bottom: 2em;
+    transition: opacity 0.2s;
+  }
+
+  .home:hover {
+    opacity: 0.7;
   }
 
   /*  .tabs-container {
@@ -70,11 +85,22 @@
     font-weight: 400;
   }
 
+  p {
+    font-size: 1.4em;
+    color: #7f8994;
+    margin: 0 0 0.5em 0;
+  }
+
+  strong {
+    font-weight: 500;
+    color: #b6d1f0;
+  }
+
   a {
     /*color: #a2caef;*/
     /*color: #c4e3ff;*/
-    color: transparent;
-    text-decoration: none;
+    /*color: transparent;*/
+    /*text-decoration: none;*/
     /*font-weight: 600;*/
     /*transition: all 0.5s ease 0s;*/
   }
@@ -87,6 +113,14 @@
 
 @media (min-width:481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .contents-container {
+    padding: 3em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
   .big-text {
     font-size: 12em;
     margin: 0 0.07em;
@@ -95,6 +129,14 @@
 
 @media (min-width:641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .contents-container {
+    padding: 4em;
+  }
+
+  p {
+    font-size: 1.6em;
+  }
+
   .big-text {
     font-size: 12.5em;
     margin: 0 0.09em;
@@ -103,6 +145,10 @@
 
 @media (min-width:961px) {
   /* tablet, landscape iPad, lo-res laptops and desktops */
+  .contents-container {
+    padding: 5em;
+  }
+
   .big-text {
     font-size: 14em;
     margin: 0 0.15em;
@@ -111,6 +157,14 @@
 
 @media (min-width:1025px) {
   /* big landscape tablets, laptops, and desktops */
+  .App-header {
+    justify-content: center;
+  }
+
+  p {
+    font-size: 1.7em;
+  }
+
   .big-text {
     font-size: 14.3em;
     margin: 0 0.19em;
@@ -128,11 +182,19 @@
     margin: 0 0.24em;
   }
 
+  .home {
+    width: 4em;
+  }
+
+  p {
+    font-size: 1.8em;
+  }
+
   .contents-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /*margin: 0;*/
   }
 }
 

@@ -27,6 +27,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "surge": "^0.20.1"
+    "surge": "^0.20.5"
   }
 }
